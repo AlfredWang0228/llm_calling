@@ -1,0 +1,22 @@
+model_id: "meta-llama/Meta-Llama-3-8B-Instruct" #only llama3 series, due to speicial eod
+token: "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"
+device: "mps"  # Use "auto" for multiple GPUs, or specify like "cuda:0"
+
+model_kwargs:
+  torch_dtype: "auto"
+  low_cpu_mem_usage: true
+  output_attentions: false
+  output_hidden_states: false
+  use_cache: true
+
+# Quantization options
+use_quantization: false  # Set to false to disable quantization
+quantization_config:
+  load_in_4bit: true
+  bnb_4bit_compute_dtype: "bfloat16"
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_quant_type: "nf4"
+
+# Generation parameters
+max_new_tokens: 4000
+do_sample: false

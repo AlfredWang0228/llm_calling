@@ -1,0 +1,42 @@
+# ollama_config.yaml
+
+# The name of the model to be used
+model: "qwen2:7b"
+
+# Configuration options for the Ollama model
+options:
+  # Range: 0.0 to 1.0
+  temperature: 0.7
+
+  # Range: 0.0 to 1.0
+  top_p: 0.9
+
+  # Range: 1 to infinity (typically no more than 100)
+  top_k: 40
+
+  # Typically a power of 2, common values: 2048, 4096, 8192
+  num_ctx: 4096
+
+  # Maximum number of tokens to generate
+  num_predict: 2560
+
+  # Range: 1.0 to infinity
+  repeat_penalty: 1.1
+
+  # Range: -2.0 to 2.0
+  presence_penalty: 0.0
+
+  # Range: -2.0 to 2.0
+  frequency_penalty: 0.0
+
+  # Options: 0 = disabled, 1 = Mirostat, 2 = Mirostat 2.0
+  mirostat: 0
+
+  # Typically between 3.0 and 5.0
+  mirostat_tau: 5.0
+
+  # Typically between 0.1 and 0.3
+  mirostat_eta: 0.1
+
+  # Any integer value
+  seed: 42
