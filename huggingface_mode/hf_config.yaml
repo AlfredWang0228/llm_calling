@@ -1,5 +1,5 @@
 model_id: "meta-llama/Meta-Llama-3-8B-Instruct" #only llama3 series, due to speicial eod
-token: "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"
+token: "**"
 device: "mps"  # Use "auto" for multiple GPUs, or specify like "cuda:0"
 
 model_kwargs:
