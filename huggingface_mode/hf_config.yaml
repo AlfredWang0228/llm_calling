@@ -1,6 +1,6 @@
 model_id: "meta-llama/Meta-Llama-3-8B-Instruct" #only llama3 series, due to speicial eod
 token: "**"
-device: "mps"  # Use "auto" for multiple GPUs, or specify like "cuda:0" # or maybe it should use like device_map: "auto", iirc
+device: "mps"  # Use "auto" for multiple GPUs, or specify like "cuda:0" # or maybe it should be like device_map: "auto", iirc
 
 model_kwargs:
   torch_dtype: "auto"
